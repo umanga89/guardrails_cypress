@@ -58,19 +58,6 @@ describe('awesome OWASP Juice shop sample tests', () => {
             cy.get(landingPageLocators.menubar.addToCartBtn).click()
             count++
         }
-        // cy.get(landingPageLocators.menubar.searchBarTextBox).clear()
-        // cy.landingPageOps.searchProductAndAddToCart(productName1)
-        // cy.get(landingPageLocators.products.productAddedToCartMessage).should('have.text',`Placed ${productName1} into basket.`)
-        // cy.get(landingPageLocators.menubar.cartItemCount).should('have.text', '1')
-        // cy.get(landingPageLocators.products.priceOfProduct.replace('@VALUE@',productName1)).should('have.text',productPrice1)
-        // cy.get(landingPageLocators.menubar.addToCartBtn).click()
-
-        // cy.get(landingPageLocators.menubar.searchBarTextBox).clear()
-        // cy.landingPageOps.searchProductAndAddToCart(productName2)
-        // cy.get(landingPageLocators.products.productAddedToCartMessage).should('have.text',`Placed ${productName2} into basket.`)
-        // cy.get(landingPageLocators.menubar.cartItemCount).should('have.text', '1')
-        // cy.get(landingPageLocators.products.priceOfProduct.replace('@VALUE@',productName2)).should('have.text',productPrice2)
-        // cy.get(landingPageLocators.menubar.addToCartBtn).click()
 
         cy.shoppingCartOps.verifyShoppingCartItem(1,productName1,1,productPrice1)
 
@@ -79,15 +66,8 @@ describe('awesome OWASP Juice shop sample tests', () => {
             expect(text).equal(`Total Price: 4.98¤`)
         })
 
-        cy.get(shoppingCartPageLocators.products.checkOutButton).click()
-        cy.get(selectAddressPageLocators.address.addNewAddressBtn).click()
-        cy.get(selectAddressPageLocators.address.countryTextBox).type('Singapore')
-        cy.get(selectAddressPageLocators.address.nameTextBox).type('Umanga')
-        cy.get(selectAddressPageLocators.address.mobileTextBox).type('6583375212')
-        cy.get(selectAddressPageLocators.address.zipCodeTextBox).type('138111')
-        cy.get(selectAddressPageLocators.address.addressTextBox).type('my address 123')
-        cy.get(selectAddressPageLocators.address.cityTextBox).type('Singapore City')
-        cy.get(selectAddressPageLocators.address.stateTextBox).type('Singapore State')
+        cy.addNewAddress('Singapore', 'Umanga', '6583375212','600211','my address 123','Singapore City','Singapore state')
+
         cy.get(selectAddressPageLocators.address.submitBtn).click()
         cy.get(selectAddressPageLocators.address.addressRadioButton).click()
         cy.get(selectAddressPageLocators.address.continueToPaymentBtn).click()
