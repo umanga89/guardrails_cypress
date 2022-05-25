@@ -1,0 +1,5 @@
+{
+    "emailTextbox":"#email",
+    "passwordTextbox": "#password",
+    "loginBtn": "#loginButton"
+}

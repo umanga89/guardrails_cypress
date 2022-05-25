@@ -1,0 +1,8 @@
+{"products":{
+    "productTable": "mat-table",
+    "productRows" : "mat-table mat-row",
+    "productRow" : "mat-table mat-row:nth-of-type(1)",
+    "productRowColumns":"mat-table mat-row:nth-of-type(@VALUE@) mat-cell:nth-child(@VALUE2@)",
+    "totalPrice" : "#price",
+    "checkOutButton": "#checkoutButton"
+}}

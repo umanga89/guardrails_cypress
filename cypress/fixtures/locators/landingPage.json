@@ -1,0 +1,18 @@
+{"menubar":{
+    "account":"#navbarAccount",
+    "login":"#navbarLoginButton",
+    "searchBarActivateBtn": "mat-icon:contains('search')",
+    "searchBarTextBox": "#mat-input-0",
+    "addToCartBtn": "button:has(span:contains('shopping_cart'))",
+    "cartItemCount": "[class*='fa-layers-counter']"
+},
+"products":{
+    "productAddToCartBtn" : "mat-card:has(div:contains('@VALUE@')) [aria-label='Add to Basket']",
+    "priceOfProduct":"[class='item-name']:contains('@VALUE@') ~ [class='item-price']",
+    "productAddedToCartMessage" : "[class='mat-simple-snack-bar-content']",
+    "searchResultsProductNames" : "mat-card div[class='item-name']"
+},
+"general":{
+    "cookieDismissBtn": "[aria-label='dismiss cookie message']",
+    "welcomePopupDismissBtn": "app-welcome-banner span:contains('Dismiss'):last"
+}}

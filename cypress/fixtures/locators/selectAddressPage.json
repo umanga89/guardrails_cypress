@@ -1,0 +1,13 @@
+{"address":{
+    "addNewAddressBtn": "button[aria-label='Add a new address']",
+    "countryTextBox" : "input[data-placeholder*='country']",
+    "nameTextBox" : "input[data-placeholder*='name']",
+    "mobileTextBox" : "input[data-placeholder*='mobile']",
+    "zipCodeTextBox" : "input[data-placeholder*='ZIP']",
+    "addressTextBox" : "textarea[data-placeholder*='address']",
+    "cityTextBox" : "input[data-placeholder*='city']",
+    "stateTextBox" : "input[data-placeholder*='state']",
+    "submitBtn": "button[type='submit']",
+    "addressRadioButton": "mat-radio-button:last",
+    "continueToPaymentBtn": "button[aria-label*='payment']"
+}}
